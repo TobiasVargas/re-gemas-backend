@@ -29,5 +29,5 @@ router_v1.register('subcategories', SubCategoryViewset)
 urlpatterns = [
     path('v1/', include('rest_framework.urls')),
     path('v1/', include(router_v1.urls)),
-    path('', admin.site.urls),
+    path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
