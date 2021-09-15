@@ -42,7 +42,7 @@ class Product(models.Model):
         #     return "Produto Categoria " + self.category.title
         # if self.subcategory:
         #     return "Produto Categoria " + self.subcategory.category.title + " - Subcategoria - " + self.subcategory.title
-        return "Produto " + str(self.id)
+        return "Produto " + str(self.picture)
 
     class Meta:
         verbose_name = "Produto"
